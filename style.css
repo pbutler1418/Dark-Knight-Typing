@@ -1,0 +1,43 @@
+body {
+  display: flex;
+  justify-content: center;
+  background: url(https://media.istockphoto.com/illustrations/view-from-the-inside-of-the-cave-illustration-id690817022?k=6&m=690817022&s=612x612&w=0&h=vZExzqef_UvPuhbXfaxx4VwPlHk5DaRhVLcJM-atDok=) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Teko', sans-serif;
+}
+.background{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  height: auto;
+  width: auto;
+}
+h1 {
+  color: yellow;
+  font-size: 350%;
+}
+.screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200%;
+  height: 480px;
+  border: 20px solid grey;
+  background: rgb(51,157,85);
+  background: radial-gradient(circle, rgba(51,157,85,1) 0%, rgba(2,0,36,1) 100%);
+}
+#start {
+  text-decoration: none;
+  color: yellow;
+  background-color: transparent;
+  font-size: 350%;
+}
+.firstScreen{
+  display: none;
+  height: fit-content;
+  width: fit-content;
+}
