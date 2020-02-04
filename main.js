@@ -8,21 +8,31 @@ let button = document.querySelector(`button`)
 let demo = document.querySelector(`firstScreen`)
 let object = document.querySelector('Object')
 let id = document.querySelector('start')
+let random = Math.floor(Math.random() * 8) 
 
-button.addEventListener('click', function firstPage(){
+button.addEventListener('click', function () {
+  console.log(crime());
+  
   }
   
   );
 
-const crimeData = () => {
+const crime = () => {
   response = axios.get("https://data.cityofchicago.org/resource/ijzp-q8t2.json", app_token = "PPhGxIh8x9w9odkeGqMlWek8N")
+    .then(response = (object) => {
+      let crime = (object.data[random].primary_type)
+      let location = (object.data[random].block)
+      console.log(`There's some kind of ${crime} at ${location}`)
+  })
+}
   
-  return response.then(function () {
-    console.log(response)
-  }
-  )
-}
+// const block = () => {
+//   response = axios.get("https://data.cityofchicago.org/resource/ijzp-q8t2.json", app_token = "PPhGxIh8x9w9odkeGqMlWek8N")
+//     .then(response = (object) => {
+//     console.log(object.data[random].block)
+//   })
+//   }
 
-function firstPage() {
-  id.classList.toggle("firstScreen")
-}
+// function firstPage() {
+//   id.classList.toggle("firstScreen")
+// }
