@@ -52,12 +52,12 @@ const showSecond = () => {
 }
 
 startButton.addEventListener('click', function () {
-  console.log(crime());
   showDiv();
   hideDiv();
 })
 
 yesButton.addEventListener(`click`, function () {
-  hideFirst();
+  console.log(crime());
   showSecond();
+  hideFirst();
 })

@@ -53,29 +53,26 @@ h1 {
   font-size: 250%;
   font-family: 'Teko', sans-serif;
 }
+img{
+  height: min-content;
+  width: min-content;
+}
 .firstScreen {
   display: none;
   flex-direction: column;
-  width: 200px;
+  width: 400px;
   color: yellow;
   font-size: 25px;
 }
 
 .secondScreen {
   display: none;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: start;
   color: yellow;
   font-size: 25px;
   height: 20px;
   width: 20px;
+}
 
-}
-.explanation {
-  display: flex;
-  justify-content: center;
-  color: yellow;
-  font-size: 25px;
-  height: 20px;
-  width: 20px;
-}
+
