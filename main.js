@@ -4,18 +4,14 @@
 // console.log(response)
 // // const crimeInput = document.querySelector('input')
 // // let input = crimeInput.value
-let button = document.querySelector(`button`)
-let demo = document.querySelector(`firstScreen`)
+let startButton = document.querySelector(`button`)
+let yesButton = document.querySelector(`.yes`)
 let object = document.querySelector('Object')
-let id = document.querySelector('start')
+let start = document.querySelector('start')
+let firstScreen = document.querySelector('.firstScreen')
 let random = Math.floor(Math.random() * 8) 
-
-button.addEventListener('click', function () {
-  console.log(crime());
+let secondScreen = document.querySelector('.secondScreen')
   
-  }
-  
-  );
 
 const crime = () => {
   response = axios.get("https://data.cityofchicago.org/resource/ijzp-q8t2.json", app_token = "PPhGxIh8x9w9odkeGqMlWek8N")
@@ -26,13 +22,42 @@ const crime = () => {
   })
 }
   
-// const block = () => {
-//   response = axios.get("https://data.cityofchicago.org/resource/ijzp-q8t2.json", app_token = "PPhGxIh8x9w9odkeGqMlWek8N")
-//     .then(response = (object) => {
-//     console.log(object.data[random].block)
-//   })
-//   }
 
-// function firstPage() {
-//   id.classList.toggle("firstScreen")
-// }
+const hideDiv = () => {
+  let x = document.querySelector(".start");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+const showDiv = () => {
+  if (firstScreen.style.display = "none") {
+    firstScreen.style.display = "flex";
+  } 
+}
+
+const hideFirst = () => {
+  if (firstScreen.style.display === "none") {
+    firstScreen.style.display = "block";
+  } else {
+    firstScreen.style.display = "none";
+  }
+  }
+const showSecond = () => {
+  if (secondScreen.style.display = "none") {
+    secondScreen.style.display = "flex";
+  }
+}
+
+startButton.addEventListener('click', function () {
+  console.log(crime());
+  showDiv();
+  hideDiv();
+})
+
+yesButton.addEventListener(`click`, function () {
+  hideFirst();
+  showSecond();
+})

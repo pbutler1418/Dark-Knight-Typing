@@ -20,7 +20,7 @@ h1 {
   color: yellow;
   font-size: 350%;
 }
-.screen {
+#screen {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,17 +30,52 @@ h1 {
   background: rgb(51,157,85);
   background: radial-gradient(circle, rgba(51,157,85,1) 0%, rgba(2,0,36,1) 100%);
 }
-.batmanIMG{
-  background-image: url("//www.hiclipart.com/free-transparent-background-png-clipart-vdtip");
-}
-#start {
+
+.start {
   text-decoration: none;
   color: yellow;
   background-color: transparent;
   font-size: 350%;
+  font-family: 'Teko', sans-serif;
 }
-.firstScreen{
+.firstScreen {
   display: none;
-  height: fit-content;
-  width: fit-content;
+  flex-direction: column;
+  width: 200px;
+  color: yellow;
+  font-size: 25px;
+}
+
+.yes {
+  text-decoration: none;
+  color: yellow;
+  background-color: transparent;
+  font-size: 250%;
+  font-family: 'Teko', sans-serif;
+}
+.firstScreen {
+  display: none;
+  flex-direction: column;
+  width: 200px;
+  color: yellow;
+  font-size: 25px;
+}
+
+.secondScreen {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  color: yellow;
+  font-size: 25px;
+  height: 20px;
+  width: 20px;
+
+}
+.explanation {
+  display: flex;
+  justify-content: center;
+  color: yellow;
+  font-size: 25px;
+  height: 20px;
+  width: 20px;
 }
