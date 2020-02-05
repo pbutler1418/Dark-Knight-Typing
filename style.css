@@ -1,3 +1,4 @@
+/* whole */
 body {
   display: flex;
   justify-content: center;
@@ -20,30 +21,14 @@ h1 {
   color: yellow;
   font-size: 350%;
 }
-#screen {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 200%;
-  height: 480px;
-  border: 20px solid grey;
-  background: rgb(51,157,85);
-  background: radial-gradient(circle, rgba(51,157,85,1) 0%, rgba(2,0,36,1) 100%);
-}
 
+/* buttons */
 .start {
   text-decoration: none;
   color: yellow;
   background-color: transparent;
   font-size: 350%;
   font-family: 'Teko', sans-serif;
-}
-.firstScreen {
-  display: none;
-  flex-direction: column;
-  width: 200px;
-  color: yellow;
-  font-size: 25px;
 }
 
 .yes {
@@ -53,9 +38,18 @@ h1 {
   font-size: 250%;
   font-family: 'Teko', sans-serif;
 }
-img{
-  height: min-content;
-  width: min-content;
+
+/* screens */
+
+#screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200%;
+  height: 480px;
+  border: 20px solid grey;
+  background: rgb(51,157,85);
+  background: radial-gradient(circle, rgba(51,157,85,1) 0%, rgba(2,0,36,1) 100%);
 }
 .firstScreen {
   display: none;
@@ -67,12 +61,45 @@ img{
 
 .secondScreen {
   display: none;
-  flex-direction: row;
+  flex-direction: column-reverse;
   justify-content: start;
   color: yellow;
   font-size: 25px;
-  height: 20px;
-  width: 20px;
+  height: 200px;
+  width: 200px;
+}
+
+
+.prompt1{
+  font-size: 25px;
+  display: flex;
+  justify-content: start;
+}
+.message{
+  color: yellow;
+  font-size: 25px;
+  height: 200px;
+  width: 200px;
+}
+
+.prompt2{
+  color: yellow;
+  font-size: 25px;
+  height: 200px;
+  width: 200px;
+}
+input {
+  border-color: 10px black;
+}
+
+.thirdScreen {
+  display: none;
+  flex-direction: column-reverse;
+  justify-content: start;
+  color: yellow;
+  font-size: 25px;
+  height: 200px;
+  width: 200px;
 }
 
 
