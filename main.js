@@ -13,12 +13,16 @@ let firstScreen = document.querySelector('.firstScreen')
 let secondScreen = document.querySelector('.secondScreen')
 let message = document.querySelector('.message')
 let secondMessage = document.querySelector('.secondMessage')
+let thirdMessage = document.querySelector('.thirdMessage')
 let firstRound = document.querySelector('.firstRound')
 let gameInput = document.querySelector('#blank')
 let secondGameInput = document.querySelector('#secondBlank')
+let thirdGameInput = document.querySelector('#thirdBlank')
 let prompt1 = document.querySelector(`.prompt1`)
 let thirdScreen = document.querySelector(`.thirdScreen`)
-
+let secondAnswerButton = document.querySelector('.secondAnswer')
+let thirdAnswerButton = document.querySelector('.thirdAnswer')
+let fourthScreen = document.querySelector(`.fourthScreen`)
 
 
 // Access to the API Info
@@ -80,6 +84,20 @@ const showThird = () => {
 
   }
 }
+
+const hideThird = () => {
+  if (thirdScreen.style.display === "none") {
+    thirdScreen.style.display = "block";
+  } else {
+    thirdScreen.style.display = "none";
+  }
+}
+const showFourth = () => {
+  if (fourthScreen.style.display = "none") {
+    fourthScreen.style.display = "block";
+
+  }
+}
 yesButton.addEventListener(`click`, async () => {
   hideFirst();
   showSecond();
@@ -94,29 +112,48 @@ answerButton.addEventListener(`click`, async () => {
   let h1 = document.querySelector('.prompt1');
   console.log(h1.textContent)
   if (input === h1.textContent) {
-    alert("Success! On to the next one!");
+    alert("Got it! What's next?");
     hideSecond();
     showThird();
     let text = await crime()
     secondMessage.innerHTML = `<h1 class = "prompt2">${text}</h1>`
   } else {
-    alert("Thats not it! Try again!");
+    alert("What's that? The communication must be off! Try again!");
   }
 })
 
 //  Round 2
 
-answerButton.addEventListener(`click`,  () => {
+secondAnswerButton.addEventListener(`click`, async () => {
   let input = secondGameInput.value;
-  let h2 = document.querySelector('.prompt2');
-  console.log(h2.textContent)
-  if (input === h2.textContent) {
-    alert("Success! On to the next one!");
-    // hideSecond();
-    // showThird();
-  //   let text = await crime()
-  //   secondMessage.innerHTML = `<h1 class = "prompt2">${text}</h1>`
+  let h1 = document.querySelector(`.prompt2`);
+  // console.log(h1.textContent)
+  if (input === h1.textContent) {
+    alert("That was a close one. Some time in Arkham will teach those clowns some manners.");
+    hideThird();
+    showFourth();
+    let text = await crime()
+    thirdMessage.innerHTML = `<h1 class = "prompt3">${text}</h1>`
   } else {
-    alert("Thats not it! Try again!");
+    alert("What's that? The communication must be off! Try again!");
   }
 })
+
+// Round 3
+
+thirdAnswerButton.addEventListener(`click`, async () => {
+  let input = thirdGameInput.value;
+  let h1 = document.querySelector(`.prompt3`);
+  // console.log(h1.textContent)
+  if (input === h1.textContent) {
+    alert("That's all of them! Joker might have gotten away but his goons are all round up. Couldn't have done it without your help!");
+    // hideThird();
+    // showFourth();
+    // let text = await crime()
+    // thirdMessage.innerHTML = `<h1 class = "prompt3">${text}</h1>`
+  } else {
+    alert("What's that? The communication must be off! Try again!");
+  }
+})
+
+

@@ -27,8 +27,9 @@ h1 {
   text-decoration: none;
   color: yellow;
   background-color: transparent;
-  font-size: 350%;
+  font-size: 100px;
   font-family: 'Teko', sans-serif;
+  border: none;
 }
 
 .yes {
@@ -37,20 +38,22 @@ h1 {
   background-color: transparent;
   font-size: 250%;
   font-family: 'Teko', sans-serif;
+  border: none;
 }
 
 /* screens */
-
 #screen {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 200%;
   height: 480px;
-  border: 20px solid grey;
+  border: 20px solid rgba(128, 128, 128, 0.63);
   background: rgb(51,157,85);
-  background: radial-gradient(circle, rgba(51,157,85,1) 0%, rgba(2,0,36,1) 100%);
+  background: radial-gradient(circle, rgba(51,157,85,1) 0%, rgba(2,0,36,1) 100%); 
 }
+
+
 .firstScreen {
   display: none;
   flex-direction: column;
@@ -71,7 +74,7 @@ h1 {
 
 
 .prompt1{
-  font-size: 25px;
+  font-size: 30px;
   display: flex;
   justify-content: start;
 }
@@ -88,8 +91,29 @@ h1 {
   height: 200px;
   width: 200px;
 }
+
+.prompt3{
+  color: yellow;
+  font-size: 25px;
+  height: 200px;
+  width: 200px;
+}
 input {
   border-color: 10px black;
+  height: 40px;
+  width: 450px;
+}
+.userInput {
+  margin: -100px;
+  margin-top: -20px
+}
+.secondUserInput {
+  margin: -100px;
+  margin-top: -20px
+}
+.thirdUserInput {
+  margin: -100px;
+  margin-top: -20px
 }
 
 .thirdScreen {
@@ -102,4 +126,121 @@ input {
   width: 200px;
 }
 
+.fourthScreen {
+  display: none;
+  flex-direction: column-reverse;
+  justify-content: start;
+  color: yellow;
+  font-size: 25px;
+  height: 200px;
+  width: 200px;
+}
+
+#blank{
+  font-family: 'Teko', sans-serif;
+  color:yellow;
+  background: black;
+  font-size:25px
+}
+
+#secondBlank{
+  font-family: 'Teko', sans-serif;
+  color:yellow;
+  background: black;
+  font-size:25px
+}
+
+#thirdBlank{
+  font-family: 'Teko', sans-serif;
+  color:yellow;
+  background: black;
+  font-size:25px
+}
+
+.answer {
+  font-size: 40px;
+    font-family:  'Teko', sans-serif;
+    color: yellow;
+    background: transparent;
+    border:none;
+}
+
+.secondAnswer {
+  font-size: 40px;
+    font-family:  'Teko', sans-serif;
+    color: yellow;
+    background: transparent;
+    border:none;
+}
+.thirdAnswer {
+  font-size: 40px;
+    font-family:  'Teko', sans-serif;
+    color: yellow;
+    background: transparent;
+    border:none;
+}
+@media (max-width: 425px) {
+    #screen {
+      height: 700px;
+      width: 100%;
+    }
+    .title{
+      font-size: ;
+    }
+    .firstScreen{
+      width: auto;
+    }
+    p {
+      font-size: 30px;
+    }
+    .start{
+      font-size: 200px
+    }
+    .answer{
+      font-size: 40px;
+      font-family:  'Teko', sans-serif;
+      color: yellow;
+    }
+    .secondScreen{
+      height: 500px;
+    }
+    .prompt1 {
+      font-size: 34px;
+    }
+    #blank {
+      width: 60%
+    }
+  
+    #secondBlank {
+      width: 60%
+    }
+  
+    #thirdBlank {
+      width: 60%
+    }
+  
+    .secondAnswer{
+      font-size: 40px;
+      font-family:  'Teko', sans-serif;
+      color: yellow;
+    }
+    .thirdScreen{
+      height: 500px;
+    }
+    .prompt2 {
+      font-size: 34px;
+    }
+  
+    .thirdAnswer{
+      font-size: 40px;
+      font-family:  'Teko', sans-serif;
+      color: yellow;
+    }
+    .fourthScreen{
+      height: 500px;
+    }
+    .prompt3 {
+      font-size: 34px;
+    }
+  }
 
