@@ -23,7 +23,12 @@ Once the product is viable, there are a few additions I would like to implement.
 
 # Wireframes
 
-
+<img src ="Wireframes/Screen Shot 2020-02-07 at 10.14.00 AM.png">
+<img src ="Wireframes/Screen Shot 2020-02-07 at 10.14.06 AM.png">
+<img src ="Wireframes/Screen Shot 2020-02-07 at 10.14.19 AM.png">
+<img src ="Wireframes/Screen Shot 2020-02-07 at 10.14.31 AM.png">
+<img src ="Wireframes/Screen Shot 2020-02-07 at 10.14.52 AM.png">
+<img src ="Wireframes/Screen Shot 2020-02-07 at 10.15.16 AM.png">
 
 
 
