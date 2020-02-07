@@ -20,3 +20,10 @@ In order for the game to reach MVP, I needed it to correctly use the API to gene
 # Post MVP
 
 Once the product is viable, there are a few additions I would like to implement. I would like to make the page as dynamic as possible, to really give the user the experience of being in the Batman-universe. I would like to return to the game to give the Batcave some moving bat animations, I would like to put some images of Batman, joker, and his henchmen so the user can actually visually follow the game. Lastly, I'd like to add a "final level" where Joker hacks the computer screen and the user has to try a rapid round of typing to fend him off. 
+
+# Wireframes
+
+
+
+
+
