@@ -244,3 +244,8 @@ input {
     }
   }
 
+  @media (min-width: 426px) and (max-width: 768px) {
+    .start{
+      font-size: 200px;
+    }
+    }
