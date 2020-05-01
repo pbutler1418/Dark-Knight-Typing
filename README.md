@@ -6,20 +6,20 @@ The Dark Knight Typing app is a typing practice game aimed to help a user learni
 
 Link to deployed site: 
 
-⋅⋅* http://batmanbeginstyping.surge.sh/
+* http://batmanbeginstyping.surge.sh/
 
 ## MVP
-⋅⋅* Be built with HTML, CSS, and JavaScript.
-⋅⋅* Use Axios to consume data from an external source, and render that data into the DOM.
-⋅⋅* Use flexbox (display: flex).
-⋅⋅* Implement responsive design on 3 screen sizes (including desktop) using 2 media queries (tablet and mobile).
-⋅⋅* Host on Surge. 
+* Be built with HTML, CSS, and JavaScript.
+* Use Axios to consume data from an external source, and render that data into the DOM.
+* Use flexbox (display: flex).
+* Implement responsive design on 3 screen sizes (including desktop) using 2 media queries (tablet and mobile).
+* Host on Surge. 
 
 ## Post-MVP
-⋅⋅* Implement more dynamic CSS.
-⋅⋅* Create a timer function, giving the user only a certain amount of time to complete each round.
-⋅⋅* Add a "final" level, where the user takes on the Joker.
-⋅⋅* Include more variety in the messages the user has to send, allowing the user to improve on multiple areas in their typing.
+* Implement more dynamic CSS.
+* Create a timer function, giving the user only a certain amount of time to complete each round.
+* Add a "final" level, where the user takes on the Joker.
+* Include more variety in the messages the user has to send, allowing the user to improve on multiple areas in their typing.
 
 
 ## Wireframes
