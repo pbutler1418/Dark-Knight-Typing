@@ -1,27 +1,28 @@
-# Project-
-Pierce Butler, Project  1 App Repo
+# Dark Knight Typing
 
-# Beginning to Type With Batman
+## Description
 
-Joker and his evil henchmen are at it again, brewing up mischief in Gotham, and Batman needs your help! With the Batman Begins Typing app, the user will act as Batmans HQ, his eye in the sky, and inform him of the latest crime occurances in Gothem and where to go to put an end to each dastardly deed by practicing their typing skills! 
+The Dark Knight Typing app is a typing practice game aimed to help a user learning to type enhance their skills and enjoy themselves at the same time. The user acts as Batman's GPS, typing out various locations where the caped crusader needs to go to put an end to Joker's schemes. The game will utilize the Chicago City Crime Data Base to randomly generate a crime and location for each round. Then, the user will have to type the message that appears on the screen to send to Batman, and if the message isn't typed correctly, the communication won't go through and the user will have to try again. Dark Knight Typing design and functionality was created with HTML, CSS, and Javascript. The app is currently deployed on Surge.
 
-# Game Mechanics
+Link to deployed site: 
 
-The game will utilize the Chicago City Crime Data Base to randomly generate a crime and location for each round. Each round the user will have to type the message that appears on the screen to tell Batman where to go and what to do, and if the message isn't typed exactly, the communication won't go through and they will have to try again.
+⋅⋅* http://batmanbeginstyping.surge.sh/
 
-# API Used
+## MVP
+⋅⋅* Be built with HTML, CSS, and JavaScript.
+⋅⋅* Use Axios to consume data from an external source, and render that data into the DOM.
+⋅⋅* Use flexbox (display: flex).
+⋅⋅* Implement responsive design on 3 screen sizes (including desktop) using 2 media queries (tablet and mobile).
+⋅⋅* Host on Surge. 
 
-Chicago Data Portal
+## Post-MVP
+⋅⋅* Implement more dynamic CSS.
+⋅⋅* Create a timer function, giving the user only a certain amount of time to complete each round.
+⋅⋅* Add a "final" level, where the user takes on the Joker.
+⋅⋅* Include more variety in the messages the user has to send, allowing the user to improve on multiple areas in their typing.
 
-# MVP
 
-In order for the game to reach MVP, I needed it to correctly use the API to generate crime data. I needed the site to be able to take in input from the user and generate story content based on that that input. Lastly, I needed the functions to correctly iterate through the game.
-
-# Post MVP
-
-Once the product is viable, there are a few additions I would like to implement. I would like to make the page as dynamic as possible, to really give the user the experience of being in the Batman-universe. I would like to return to the game to give the Batcave some moving bat animations, I would like to put some images of Batman, joker, and his henchmen so the user can actually visually follow the game. Lastly, I'd like to add a "final level" where Joker hacks the computer screen and the user has to try a rapid round of typing to fend him off. 
-
-# Wireframes
+## Wireframes
 
 <img src ="Wireframes/Screen Shot 2020-02-07 at 10.14.00 AM.png">
 <img src ="Wireframes/Screen Shot 2020-02-07 at 10.14.06 AM.png">
