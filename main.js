@@ -5,7 +5,9 @@
 // // const crimeInput = document.querySelector('input')
 // // let input = crimeInput.value
 let startButton = document.querySelector('button')
+let body = document.querySelector('body')
 let yesButton = document.querySelector('.yes')
+let container = document.querySelector('.container')
 let answerButton = document.querySelector('.answer')
 let object = document.querySelector('Object')
 let start = document.querySelector('start')
@@ -26,12 +28,45 @@ let fourthScreen = document.querySelector(`.fourthScreen`)
 
 
 // Access to the API Info
+const loadScreen = () => {
+    container.style.display = "inline-block";
+}
+
+const removeLoadScreen = () => {
+  container.style.display = "none";
+}
 const crime = async () => {
+  loadScreen()
   const response = await axios.get("https://data.cityofchicago.org/resource/ijzp-q8t2.json", app_token = "PPhGxIh8x9w9odkeGqMlWek8N")
   let random = Math.floor(Math.random() * 8)
   let crime = (response.data[random].primary_type)
   let location = (response.data[random].block)
+  removeLoadScreen()
   let prompt = `There's some kind of ${crime} at ${location}`
+  return prompt
+  
+}
+
+
+const crime2 = async () => {
+  loadScreen()
+  const response = await axios.get("https://data.cityofchicago.org/resource/ijzp-q8t2.json", app_token = "PPhGxIh8x9w9odkeGqMlWek8N")
+  let random = Math.floor(Math.random() * 8)
+  let crime = (response.data[random].primary_type)
+  let location = (response.data[random].block)
+  removeLoadScreen()
+  let prompt = `Quick Batman! Some one's ${crime} at ${location}`
+  return prompt
+}
+
+const crime3 = async () => {
+  loadScreen()
+  const response = await axios.get("https://data.cityofchicago.org/resource/ijzp-q8t2.json", app_token = "PPhGxIh8x9w9odkeGqMlWek8N")
+  let random = Math.floor(Math.random() * 8)
+  let crime = (response.data[random].primary_type)
+  let location = (response.data[random].block)
+  removeLoadScreen()
+  let prompt = `There's ${crime} at ${location}, if you hurry you can catch them!`
   return prompt
 }
 
@@ -70,6 +105,10 @@ const showSecond = () => {
 
   }
 }
+
+// const error = () => {
+//   firstScreen.style.display.background-color = "red";
+// }
 
 const hideSecond = () => {
   if (secondScreen.style.display === "none") {
@@ -115,10 +154,11 @@ answerButton.addEventListener(`click`, async () => {
     alert("Got it! What's next?");
     hideSecond();
     showThird();
-    let text = await crime()
+    let text = await crime2()
     secondMessage.innerHTML = `<h1 class = "prompt2">${text}</h1>`
   } else {
     alert("What's that? The communication must be off! Try again!");
+    // error()
   }
 })
 
@@ -132,7 +172,7 @@ secondAnswerButton.addEventListener(`click`, async () => {
     alert("That was a close one. Some time in Arkham will teach those clowns some manners.");
     hideThird();
     showFourth();
-    let text = await crime()
+    let text = await crime3()
     thirdMessage.innerHTML = `<h1 class = "prompt3">${text}</h1>`
   } else {
     alert("What's that? The communication must be off! Try again!");
